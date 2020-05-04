@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<section>
+  <h1 class="container ">Trabalhos</h1>
+</section>
+<section>
+  <div class="works">
+    <!-- orders content according to the "publishdate" field in front matter -->
+    {% for post in paginator.posts %}
+
+    <div class="recent">
+      <a href="{{ post.url }}">
+        <img
+          class="img-fluid img-thumbnail pull-left"
+          src="{{ post.post-images[0] }}"
+        />
+      </a>
+
+      <h3 id="black">{{ post.title }}</h3>
+
+      <p>
+        {{ post.heading}}
+      </p>
+      <p><a href="{{ post.site }}">{{ post.site }}</a></p>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <p class="green_status"><b>{{ post.status }}</b></p>
+    </div>
+
+    {% endfor %}
+    <!-- pagination -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+      <a
+        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+        >&laquo; Prev</a
+      >
+      {% else %}
+      <span>&laquo; Prev</span>
+      {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
+      paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+      {% elsif page == 1 %}
+      <a href="/posts/">{{ page }}</a>
+      {% else %}
+      <a
+        href="{{ paginator.next_page_path| prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
+        >{{ page }}</a
+      >
+      {% endif %} {% endfor %} {% if paginator.next_page %}
+      <a
+        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+        >Next &raquo;</a
+      >
+      {% else %}
+      <span>Next &raquo;</span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>

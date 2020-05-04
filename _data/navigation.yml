@@ -1,0 +1,13 @@
+# specify main menu items here
+
+- text: Escritório
+  url: /office
+
+- text: Áreas de atuação
+  url: /expertise
+
+- text: Publicações
+  url: /posts
+
+- text: Contato
+  url: /contact

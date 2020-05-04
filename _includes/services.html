@@ -1,0 +1,14 @@
+<section>
+  <h1 class="container ">{{ page.title }}</h1>
+</section>
+<section class="services">
+  {% for service in page.services limit:5 %}
+
+  <aside>
+    <img src="{{  service.icon | site.baseurl }}" height="150" />
+    <h3 class="black">{{ service.heading }}</h3>
+    <p>{{ service.description }}</p>
+  </aside>
+  {% endfor %}
+</section>
+<hr />

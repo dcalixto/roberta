@@ -1,0 +1,56 @@
+<!-- start Mobile Nav section -->
+
+<!-- end of Mobile Nav section -->
+
+
+<header >
+
+ 
+
+  <nav >
+    <div id="nav-container"  >
+      <div
+      class="ui pointing menu stackable"
+      role="navigation"
+      aria-label="Main menu"
+    >
+    
+      <a class="home" id="logo" href="{{ "/" | relative_url }}">
+        <img
+          style="width:287px;height:42px"
+          class="navbar-logo"
+          src="{{ site.baseurl }}/photos/logo.png"
+          alt="{{ site.title }}"
+        />
+      
+      </a>
+ 
+   
+      <div class="right menu">
+        {% include navigation.html navigation=site.data.navigation %} 
+     
+      </div>
+      <div class="hamburger">
+        <span class="hamburger-bun"></span>
+        <span class="hamburger-patty"></span>
+        <span class="hamburger-bun"></span>
+      </div>
+      
+    </div>
+  
+    </div>
+  
+  </nav>
+
+  <!-- <ul class="nav">
+       
+        {% include navigation.html navigation=site.data.navigation %} 
+
+      </ul>
+      
+      -->
+
+</header>
+
+
+<!-- end of Header section -->

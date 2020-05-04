@@ -1,0 +1,25 @@
+<!-- start footer section -->
+
+<footer>
+  <section class="flexcontainer">
+    {% if site.data.information %} {% assign info = site.data.information %}
+
+    <div class="footer-section">
+      <i class="fa fa-phone"></i>
+      <a href="tel:(24)993017256"> {{info.phone}}</a>
+
+      <i class="fa fa-envelope"></i>
+      <a href="mailto:calixtodaniel@gmail.com">{{info.email}}</a>
+
+      {% endif %}
+
+      <p class="text-center">
+        <small>© 2020. NETJAPA</small>
+      </p>
+
+      {% if site.data.information %} {% assign info = site.data.information %}
+      {% endif %}
+    </div>
+  </section>
+</footer>
+<!-- end footer section -->

@@ -1,0 +1,46 @@
+<!-- Bootstrap core JavaScript -->
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+></script>
+
+<script src="{{ site.baseurl }}/assets/js/apollo.js"></script>
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/hamburger.js"></script>
+
+<script type="text/javascript">
+  var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination"
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    autoplay: {
+      delay: 5000
+    }
+  });
+</script>
+<script type="text/javascript">
+  $("#contact-form").submit(function(e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Mensagem enviada");
+    });
+  });
+</script>
+
+<!-- 
+   MADE BY NETJAPA
+  -->

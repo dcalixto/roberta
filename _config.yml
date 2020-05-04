@@ -1,0 +1,98 @@
+# Basic settings
+url: "https://www.netjapa.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Netjapa websites e apps" # the name of your site, e.g. ACME Corp.
+description: "Criação de sites e Desenvolvimento de sites e apps,
+  mobile apps, aplicativos para celular,
+  aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
+tagline: "Criação de sites e Desenvolvimento de sites e apps,
+  mobile apps, aplicativos para celular,
+  aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
+lang: "pt-BR"
+# Build settings
+markdown: kramdown
+
+# Kramdown options
+kramdown:
+  # Prevent IDs from being added to h1-h6 tags
+  auto_ids: false
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+  - jekyll-menus
+#paginate: 3
+#paginate_path: service/page:num/
+paginate: 3
+paginate_path: posts/page:num/
+
+#Permalink
+permalink: /post/:title
+source: .
+destination: ./_site
+# Compress CSS
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+#Permalink format (/blog/ is ignored for pages)
+#permalink: /post/:title
+#permalink: :slug/
+
+#Collections
+collections:
+  slides:
+include:
+  - _pages
+  - _posts
+section: true
+
+# set to 'true' to enable Netlify CMS (/admin) in production builds
+netlifycms: false
+
+# set to 'true' to enable Google Analytics tracking code in production builds
+analytics: false
+
+# Compress HTML (in liquid via layouts/compress.html)
+compress_html:
+  clippings: all
+
+# Social
+
+social:
+  name: Netjapa
+  links:
+    - https://twitter.com/netjapa
+    - https://www.facebook.com/netjapa
+
+# set some common post defaults
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post" # set the correct default template for a post
+      section: "post" # set the root section name
+
+# Include in processing (e.g. Netlify directives)
+# Uncomment before use
+
+#include:
+#  - _redirects
+#  - _headers
+
+# Exclude from processing.
+# The following items will not be processed.
+exclude:
+  - README.md
+  - LICENSE.txt
+  - netlify.toml
+  - feed.xml
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
