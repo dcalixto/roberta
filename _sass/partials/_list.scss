@@ -1,0 +1,17 @@
+.list ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 30em;
+}
+
+.list li {
+  background: gray;
+  width: 5em;
+  height: 5em;
+  margin: 0.5em;
+}
