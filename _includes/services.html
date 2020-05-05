@@ -2,7 +2,7 @@
   <h1 class="container ">{{ page.title }}</h1>
 </section>
 <section class="services">
-  {% for service in page.services limit:5 %}
+  {% for service in page.services limit:10 %}
 
   <aside>
     <img src="{{  service.icon | site.baseurl }}" height="150" />

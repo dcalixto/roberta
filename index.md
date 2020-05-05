@@ -11,20 +11,23 @@ services:
 
   - heading: Empresarial
     description: Direito societário, Blindagem patrimonial, Recuperação empresarial
-    icon: "/photos/ecomerce.svg"
+    icon: "/photos/business.jpg"
 
-  - heading: Mobile App
-    description: Aplicativos mobile hibridos com foco na simplicidade e funcionalidade.
-    icon: "/photos/mobile.svg"
-  - heading: Backend API
+  - heading: Família
+    description: Separação judicial, Divórcio, Alimentos, Investigação de Paternidade, Tutela, #Guarda e visitação de menores, Reconhecimento e Dissolução de União Estável,   Pacto #antenupcial, Testamento, Inventário Judicial e Extrajudicial, Casamento, Doação,
+    #Questões de gênero
+    icon: "/photos/family.jpg"
+  - heading: Trabalhista
 
-    description: API respeitando as normas e especificações da https://jsonapi.org/ orientadas para alta performace.
-    icon: "/photos/backend.svg"
+    description: Rescisão direta e indireta, Reclamações trabalhistas
 
-  - heading: Frontend API
-    description: API utilizando o melhor da tecnologia para front-end com js.
-    icon: "/photos/frontapi.svg"
-description: ""
-icon: ""
-banner: "/photos/banner.png"
+    icon: "/photos/trabalhista.jpg"
+
+  - heading: Previdenciario
+    description: Escrever
+    icon: "/photos/old.jpg"
+
+  - heading: Consumidor
+    description: Escrever
+    icon: "/photos/consumer.jpg"
 ---
