@@ -1,12 +1,13 @@
 ---
 layout: post
-title: MontagemBR
+title: Video
 date: 2020-03-15 03:00:00 +0000
 post-images:
-  - "/photos/montagembr.png"
-  - "/photos/montagembr.jpg"
+  - "/photos/direito.jpg"
 
 body: MontagemBR, site de servicos de momtagem e desmontagem de moveis no Rio de Janeiro.
-site: https://www.montagembr.com
-status: concluido
+video: https://www.youtube.com/watch?v=oIp1eTJsjUw
+youtubeId: oIp1eTJsjUw
 ---
+
+{% include youtube.html id='QH2-TGUlwu4' %}

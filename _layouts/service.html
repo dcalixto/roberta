@@ -3,32 +3,36 @@ layout: default
 ---
 
 <section>
-  <h1 class="container ">Trabalhos</h1>
+  <h1 class="container ">Publicações</h1>
 </section>
-<section>
-  <div class="works">
-    <!-- orders content according to the "publishdate" field in front matter -->
+
+<div class="list">
+  <ul>
     {% for post in paginator.posts %}
 
-    <div class="recent">
-      <a href="{{ post.url }}">
-        <img
-          class="img-fluid img-thumbnail pull-left"
-          src="{{ post.post-images[0] }}"
-        />
-      </a>
-
-      <h3 id="black">{{ post.title }}</h3>
-
-      <p>
-        {{ post.heading}}
-      </p>
-      <p><a href="{{ post.site }}">{{ post.site }}</a></p>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <p class="green_status"><b>{{ post.status }}</b></p>
-    </div>
-
+    <li>
+      <div class="list-box">
+        <div class="image">
+          <a href="{{ post.url }}" class="image">
+            <img src="{{ post.post-images[0] }}" />
+          </a>
+        </div>
+        <div class="list-box-text">
+          <div class="text">
+            <h2>{{ post.title }}</h2>
+          </div>
+          <div class="text">
+            {{ post.heading}}
+          </div>
+        </div>
+      </div>
+    </li>
     {% endfor %}
+  </ul>
+</div>
+
+<section>
+  <div class="works list">
     <!-- pagination -->
     {% if paginator.total_pages > 1 %}
     <div class="pagination">

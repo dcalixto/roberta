@@ -1,27 +1,37 @@
-<section><h2 class="text-center">Trabalhos Recentes</h2></section>
-<section>
-  <div class="works">
-    <!-- orders content according to the "publishdate" field in front matter -->
+<section><h2 class="text-center">Publicações recentes</h2></section>
+
+<div class="list">
+  <ul>
     {% for post in site.posts limit:7 %}
 
-    <div class="recent">
-      <a href="{{ post.url }}">
-        <img
-          class="img-fluid img-thumbnail pull-left"
-          src="{{ post.post-images[0] }}"
-        />
-      </a>
-
-      <h3><a id="black" href="{{ post.url}}">{{ post.title }}</a></h3>
-
-      <p>
-        {{ post.heading}}
-      </p>
-      <p><a class="black-link" href="{{ post.site }}">{{ post.site }}</a></p>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <p class="green_status"><b>{{ post.status }}</b></p>
-    </div>
-
+    <li>
+      <div class="list-box">
+        <div class="image">
+          <a href="{{ post.url }}" class="image">
+            {% if spost.post-images[0] == null %}
+            <img src="{{ post.post-images[0] }}" />
+            {% else %} {% include youtube-thumbnail.html id='QH2-TGUlwu4' %} {%
+            endif %}
+          </a>
+        </div>
+        <div class="list-box-text">
+          <div class="text">
+            <h2>{{ post.title }}</h2>
+          </div>
+          <div class="text">
+            {{ post.heading}}
+          </div>
+          <div class="text">
+            <time
+              class="post-date"
+              datetime="{{ post.date | date_to_xmlschema }}"
+            >
+              {% include data.html date=post.date %}
+            </time>
+          </div>
+        </div>
+      </div>
+    </li>
     {% endfor %}
-  </div>
-</section>
+  </ul>
+</div>

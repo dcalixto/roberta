@@ -20,13 +20,15 @@ layout: default
           title="{{ image }}"
         />
       </a>
+      {% include youtube.html id='QH2-TGUlwu4' %}
     </div>
 
     <a href="{{ page.site }}">{{ page.site }}</a>
     <p>
       {{ page.body }}
     </p>
-
-    <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+    <time class="post-date" datetime="{{ date_to_xmlschema }}">
+      {% include data.html date=page.date %}
+    </time>
   </div>
 </section>

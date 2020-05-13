@@ -1,13 +1,10 @@
 # Basic settings
-url: "https://www.netjapa.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.sabinorocha.com.br" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Netjapa websites e apps" # the name of your site, e.g. ACME Corp.
-description: "Criação de sites e Desenvolvimento de sites e apps,
-  mobile apps, aplicativos para celular,
-  aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
-tagline: "Criação de sites e Desenvolvimento de sites e apps,
-  mobile apps, aplicativos para celular,
-  aplicativos android, site, app, aplicativo, e-commerce, loja virtual"
+title: "Advogado RJ - Sabino Rocha Advogados Associados" # the name of your site, e.g. ACME Corp.
+description: "Sabino Rocha Advogados Associados é um escritório localizado no Rio de Janeiro, 
+com forte atuação nas áreas cível, família, criminal e imobiliário."
+tagline: "Advogado, Advogado RJ, Advogados"
 lang: "pt-BR"
 # Build settings
 markdown: kramdown
@@ -20,8 +17,8 @@ kramdown:
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-
   - jekyll-menus
+  
 #paginate: 3
 #paginate_path: service/page:num/
 paginate: 3
@@ -61,10 +58,10 @@ compress_html:
 # Social
 
 social:
-  name: Netjapa
+  name: Sabinorocha
   links:
-    - https://twitter.com/netjapa
-    - https://www.facebook.com/netjapa
+    - https://twitter.com/sabinorocha
+    - https://www.facebook.com/sabinorocha
 
 # set some common post defaults
 defaults:
