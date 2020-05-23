@@ -67,7 +67,7 @@
   background: #0c032b;
   padding: 0.92857143em 1.14285714em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #fff;
   font-weight: 400;
   -webkit-transition: background 0.1s ease, color 0.1s ease,
     -webkit-box-shadow 0.1s ease;
@@ -77,6 +77,24 @@
   transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease,
     -webkit-box-shadow 0.1s ease;
 }
+
+
+
+
+
+.ui.menu .item:hover {
+  text-decoration: underline;
+ 
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 767px) {
   .ui.stackable.menu .item {
     width: 100% !important;

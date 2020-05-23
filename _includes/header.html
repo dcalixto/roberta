@@ -1,32 +1,32 @@
 <!-- start Mobile Nav section -->
 
-<!-- end of Mobile Nav section -->
 
 
-<header >
+<!-- start Header section -->
 
- 
 
-  <nav >
-    <div id="nav-container"  >
+<header class="site-header"  style="background-color: #0c032b;">
+  <div class="container">
       <div
       class="ui pointing menu stackable"
       role="navigation"
       aria-label="Main menu"
     >
-    
-      <a class="home" id="logo" href="{{ "/" | relative_url }}">
-        <img
-          style="width:287px;height:42px"
-          class="navbar-logo"
-          src="{{ site.baseurl }}/photos/logo.png"
-          alt="{{ site.title }}"
-        />
+    <h1 class="logo">
+        <a href="{{ "/" | relative_url }}">
+         
+        </a>
+      </h1>
       
-      </a>
- 
-   
-      <div class="right menu">
+      
+       <!--<nav class="main-nav right menu">
+        <!--<ul class="navigation">
+       
+          {% include navigation.html navigation=site.data.navigation %} 
+
+        </ul>-->
+
+         <div class="right menu navigation">
         {% include navigation.html navigation=site.data.navigation %} 
      
       </div>
@@ -35,22 +35,12 @@
         <span class="hamburger-patty"></span>
         <span class="hamburger-bun"></span>
       </div>
-      
+
+     <!--</nav>-->
+  </div>
     </div>
+
   
-    </div>
-  
-  </nav>
-
-  <!-- <ul class="nav">
-       
-        {% include navigation.html navigation=site.data.navigation %} 
-
-      </ul>
-      
-      -->
-
 </header>
-
 
 <!-- end of Header section -->

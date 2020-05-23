@@ -4,15 +4,27 @@
   {% include head.html %}
   <body>
       {% include header.html %}
-      <main>
-        <div >
-    {{ content}}
-  </div>
-      </main>
+      {% include banner.html %}
+
+      {% include services.html %}
+      {% include contact.html %}
+      {% if page.url == "/" %}
+      {% include posts.html %}
+      {% endif %}
+      {% if page.url == "/expertise" %} 
+      {% include expertise.html %}
+      {% endif %}
+      <section class="container pure-g">
+       
+          <div class="pure-u-1">
+            <div class="content">
+              {{ content }}
+            </div>
+          </div>
+     
+      </section>
+   
       {% include footer.html %}
       {% include script.html %}
-   
   </body>
 </html>
-
-

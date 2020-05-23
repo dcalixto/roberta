@@ -1,52 +1,77 @@
-<section><h2 class="margin-0">Dúvidas?</h2></section>
+{% if page.url == "/" %} {% if site.data.information %} {% assign info =
+site.data.information %}
+<section class="container pure-g padding">
+ 
+  <div class="pure-u-1 pure-u-md-1-2">
+    <ul style="padding-inline-start:0;" class="list-unstyled list-big-headlines ">
+      <li><h2 class="margin-0">Entre em contato</h2></li>
+   
+  
 
-{% if site.data.information %} {% assign info = site.data.information %}
+ 
+      <li>{{ info.phone }}</li>
+      <li><div id="share">
 
-<section class="flexcontainer">
-  <div class="contact-div ">
-    <div class="mapouter">
-      <div id="map-canvas" class="gmap_canvas ">
-        <iframe
-          width="100%"
-          height="350"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=rua%20nossa%20senhora%20das%20gra%C3%A7as%2C%20743&t=&z=19&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-        ></iframe
-        ><a href="https://www.enable-javascript.net/blog/divi-discount/"
-          >tente divi</a
-        >
-      </div>
-      <style>
-        .mapouter {
-          margin-bottom: 50px;
-          position: relative;
-          text-align: right;
-          height: 350px;
-          width: 100%;
-        }
-        .gmap_canvas {
-          overflow: hidden;
-          background: none !important;
-          height: 350px;
-          width: 100%;
-        }
-      </style>
-    </div>
-    <p><b>{{ info.address }}</b></p>
-    <p>Entre em contato!</p>
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}" target="blank"><i class="fa fa-facebook"></i></a>
 
-    <p><b>Pelos telefones</b></p>
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'
+  alt="{{ info.phone }}"
 
-    <p>{{ info.phone }}</p>
-    <p>{{ info.phone2 }}</p>
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
+</div>
+</li>
+
+<li>
+     <div class="mapouter">
+          <div id="map-canvas" class="gmap_canvas ">
+            <iframe
+              width="100%"
+              height="300"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=av.%20guilherme%20maxwell%2C%20bonsucesso&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://www.enable-javascript.net/blog/divi-discount/"
+              >tente divi</a
+            >
+          </div>
+          <style>
+            .mapouter {
+              margin-bottom: 50px;
+              position: relative;
+              text-align: right;
+              height: 300px;
+              width: 300px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 300px;
+              width: 100%;
+            }
+          </style>
+        </div>
+      </li>
+
+    </ul>
   </div>
 
-  <div class="contact-div ">
-    <form id="contact-form" name="contact" netlify>
+  <div class="pure-u-1 pure-u-md-1-2">
+
+       <form 
+        class="pure-form pure-form-stacked"
+          style="margin-top:30px"
+  action="https://formspree.io/xgenobpq"
+  method="POST" name="contato" >
+
       <label class="float-left" for="input-prename">Nome</label>
       <input
         name="name"
@@ -58,9 +83,9 @@
         value=""
       />
 
-      <label class="float-left" for="input-mail">Email</label>
+      <label class="float-left" for="input-mail">Email ou Telefone</label>
       <input
-        type="email"
+        type="text"
         required="required"
         class="form-control"
         id="input-mail"
@@ -79,9 +104,14 @@
         name="input-message"
       ></textarea>
 
-      <button type="submit">Enviar</button>
+      <input
+        type="submit"
+        value="Enviar"
+        id="btn-submit"
+        class="pure-button pure-button-primary"
+      />
     </form>
   </div>
+
 </section>
-{% endif %}
-<hr />
+{% endif %} {% endif %}

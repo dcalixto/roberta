@@ -1,38 +1,22 @@
-.list ul {
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  list-style: none;
-}
-
-.list li {
-  border: solid 1px gray;
-
-  margin: 0.5em;
-}
 
 .list-box {
-  display: flex;
-  flex-direction: row;
-}
-.list-box > .image {
-  /* flex: 1 0 0%;*/
-  text-align: left; /* and here*/
-}
-.image > img {
-  vertical-align: top; /* here */
-  max-width: 250px;
-}
-.list-box > .text {
-  flex: 2 0 0%;
-  /* and eventually */
+display: table-cell;
+padding: 10px;
 
-  margin: auto 0;
+
+
+
+   
+border-bottom: 1px solid #ddd
+ 
 }
-.list-box-text div {
-  display: flex;
-  flex-direction: column;
+.list-box-text {padding-left: 10px }
+
+.list-box  img{
+ float: left;
+ width: 250px
 }
+
 .youtube-wrapper {
   position: relative;
   width: 100%;

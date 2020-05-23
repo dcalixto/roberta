@@ -1,0 +1,39 @@
+#banner ul li {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 25px;
+text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
+}
+/*ul {
+  display: block;
+  list-style-type: disc;
+  margin: 0;
+}*/
+
+
+ul.service-list  li {margin-bottom:20px;margin-top:20px;font-size: 21px; font-weight: bold; color:#0046be}
+
+
+
+.fa-check-square-o {
+  color: #9c3;
+
+}
+
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+ 
+}

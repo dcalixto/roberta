@@ -1,33 +1,31 @@
 ---
 title: Áreas práticas
 layout: home
+banner_image: "/photos/rect3640.png"
 services:
   - heading: Cível
-    description: Atuação jurídica junto a processos administrativos e judiciais
-    #Consultoria e elaboração de parecer
-    # Elaboração de contratos, distratos e minutas
-    #Relações de consumo e consultoria preventiva em diminuição de riscos para empresas.
+    description: Acidente de transito DETRAN/DPVAT, Despejo - Reitegracao de posse - Usocapiao
+  
     icon: "/photos/civil.jpg"
 
-  - heading: Empresarial
-    description: Direito societário, Blindagem patrimonial, Recuperação empresarial
-    icon: "/photos/business.jpg"
+  - heading: Penal
+    description: Habeas Corpus - Defessa processual, JECRIM - Visitacao delegacia/presidio
+    icon: "/photos/penal.jpg"
 
-  - heading: Família
-    description: Separação judicial, Divórcio, Alimentos, Investigação de Paternidade, Tutela, #Guarda e visitação de menores, Reconhecimento e Dissolução de União Estável,   Pacto #antenupcial, Testamento, Inventário Judicial e Extrajudicial, Casamento, Doação,
-    #Questões de gênero
+  - heading: Família & Orfaos
+    description:  Divórcio - Regularizacao de visita, Pensao alimenticia - Alvara - Inventario
     icon: "/photos/family.jpg"
   - heading: Trabalhista
 
-    description: Rescisão direta e indireta, Reclamações trabalhistas
+    description: Acordos Extrajudiciais - Acoes judiciais, FGTS - Calculo de verbas rescisorias 
 
     icon: "/photos/trabalhista.jpg"
 
   - heading: Previdenciario
-    description: Escrever
+    description: Aposentadoria - Pensao por morte - INSS - Juizado Especial Federal
     icon: "/photos/old.jpg"
 
   - heading: Consumidor
-    description: Escrever
+    description: Juizado Especial Civel - Empresas de Telefonia, SPC/SERASA - Danos morais - TOI/LIGHT
     icon: "/photos/consumer.jpg"
 ---

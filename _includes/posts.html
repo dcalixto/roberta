@@ -1,37 +1,37 @@
-<section><h2 class="text-center">Publicações recentes</h2></section>
 
-<div class="list">
-  <ul>
-    {% for post in site.posts limit:7 %}
 
-    <li>
-      <div class="list-box">
-        <div class="image">
-          <a href="{{ post.url }}" class="image">
-            {% if spost.post-images[0] == null %}
+<section class="grey-card-no-padding">
+ 
+
+   <div class="container  pure-g">
+    <div class="gallery-container">
+      <div class="pure-u-1 pure-u-md-1">
+      <h2 class="text-center">Publicações recentes</h2>
+     {% for post in site.posts limit:12 %}
+
+        <div class="photo-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 gallery">
+            <a  href="{{ post.url }}">
+                   {% if spost.post-images[0] == null %}
             <img src="{{ post.post-images[0] }}" />
             {% else %} {% include youtube-thumbnail.html id='QH2-TGUlwu4' %} {%
             endif %}
-          </a>
-        </div>
-        <div class="list-box-text">
-          <div class="text">
-            <h2>{{ post.title }}</h2>
-          </div>
-          <div class="text">
-            {{ post.heading}}
-          </div>
-          <div class="text">
-            <time
+  </a>
+            <div class="gallery-caption">
+                <span><a href="{{ post.url }}">{{ post.title }}</a></span>
+            </div>
+             <time
               class="post-date"
               datetime="{{ post.date | date_to_xmlschema }}"
             >
               {% include data.html date=post.date %}
             </time>
-          </div>
         </div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+
+{% endfor %}
 </div>
+    </div>
+
+</div>
+</section>
+
+
