@@ -1,7 +1,7 @@
 ---
 heading: Penal
 description: Habeas Corpus - Defessa processual, JECRIM - Visitacao delegacia/presidio
-icon: "/photos/penal.jpg"
+icon: "/photos/penal2.jpg"
 
 ---
 
