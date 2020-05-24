@@ -1,5 +1,5 @@
 # Basic settings
-url: "https://www.sabinorocha.com.br" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://objective-swanson-e8357b.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Advogado RJ - Sabino Rocha Advogados Associados" # the name of your site, e.g. ACME Corp.
 description: "Sabino Rocha Advogados Associados é um escritório localizado no Rio de Janeiro, 
