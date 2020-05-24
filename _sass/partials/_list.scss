@@ -1,20 +1,29 @@
 
-.list-box {
-display: table-cell;
-padding: 10px;
+.list-box{
 
-
-
-
-   
-border-bottom: 1px solid #ddd
- 
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom:20px;
+  padding-bottom: 10px
 }
-.list-box-text {padding-left: 10px }
 
-.list-box  img{
- float: left;
- width: 250px
+.red, .green{ min-width: 0 }
+
+
+.red { flex: 0 300px } 
+.green { flex: auto; margin-left: 10px } 
+
+
+@media only screen and (max-width: 767px) {
+.list-box  {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+   flex-wrap: nowrap;
+   
+}
 }
 
 .youtube-wrapper {

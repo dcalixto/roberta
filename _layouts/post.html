@@ -3,24 +3,16 @@ layout: default
 ---
 
 <section>
-  <h1 class="container ">{{ page.title }}</h1>
-</section>
-<section>
   <div>
     <div class="image-post">
-      <a
-        href="{{ page.site }}"
-        title="{{ image.name }}"
-        class="d-block mb-4 h-100"
-      >
-        <img
-          class="img-fluid img-thumbnail img-responsive"
-          src="{{ page.post-images[1]}}"
-          alt="{{ image }}"
-          title="{{ image }}"
-        />
-      </a>
-      {% include youtube.html id='QH2-TGUlwu4' %}
+    
+
+        {% if page.post-images != null %}
+            <img src="{{ page.post-images[0] }}" />
+            {% else %} 
+              {% include youtube.html id='QH2-TGUlwu4' %}
+             {% endif %}
+  
     </div>
 
     <a href="{{ page.site }}">{{ page.site }}</a>

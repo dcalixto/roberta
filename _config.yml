@@ -39,10 +39,12 @@ sass:
 
 #Collections
 collections:
-  slides:
+ 
+  expertise:
 include:
   - _pages
   - _posts
+  - _expertise
 section: true
 
 # set to 'true' to enable Netlify CMS (/admin) in production builds
