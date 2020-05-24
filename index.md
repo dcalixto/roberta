@@ -1,7 +1,7 @@
 ---
 title: Áreas práticas
 layout: home
-banner_image: "/photos/rect3640.png"
+banner_image: "/photos/rect36402.jpg"
 services:
   - heading: Cível
     description: Acidente de transito DETRAN/DPVAT, Despejo - Reitegracao de posse - Usocapiao
