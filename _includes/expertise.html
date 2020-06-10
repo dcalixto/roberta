@@ -5,10 +5,20 @@
   <div class="pure-u-1 pure-u-md-1">
 
     {% for expertise in site.expertise %}
-  
+  <div class="list-container">
         <div class="list-box">
   <div class="red">
-              <img src="{{  expertise.icon | site.baseurl }}"  />
+             
+              <picture>
+<source media="(max-width: 700px)" sizes="(max-width: 500px) 50vw, 10vw"
+srcset="{{  expertise.icon | site.baseurl }} 138w, {{  expertise.icon | site.baseurl }} 138w">
+
+<source media="(max-width: 1400px)" sizes="(max-width: 1000px) 100vw, 50vw"
+srcset="{{  expertise.icon | site.baseurl }} 416w, {{  expertise.icon | site.baseurl }} 416w">
+
+<img src="{{  expertise.icon | site.baseurl }}" alt="expertises">
+</picture>
+
            
           
           </div>
@@ -19,7 +29,7 @@
         
        
           </div>
-     
+     </div>
       </div>
       {% endfor %}
      

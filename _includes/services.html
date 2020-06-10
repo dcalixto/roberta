@@ -15,7 +15,18 @@
 
  <div class="card">
  	<div class="card-header">
-    <img src="{{  service.icon | site.baseurl }}" height="150" />
+
+<picture>
+<source media="(max-width: 700px)" sizes="(max-width: 500px) 50vw, 10vw"
+srcset="{{  service.icon | site.baseurl }} 138w, {{  service.icon | site.baseurl }} 138w">
+
+<source media="(max-width: 1400px)" sizes="(max-width: 1000px) 100vw, 50vw"
+srcset="{{  service.icon | site.baseurl }} 416w, {{  service.icon | site.baseurl }} 416w">
+
+<img src="{{  service.icon | site.baseurl }}" alt="services">
+</picture>
+
+ <!--<img src="{{  service.icon | site.baseurl }}" height="150" />-->
 </div>
 <div class="card-body">
     <h3 >{{ service.heading }}</h3>

@@ -62,9 +62,39 @@
 
 @media (max-width: 768px) {
   .container {
-    margin: 0 2em;
+    /*margin: 0 2em;*/
+
+     margin: 0 auto;
   }
 }
+
+
+
+
+
+
+#main-img {
+  
+  height: 150px;
+  width:100%
+} 
+
+@media (max-width: 768px) {   
+    #main-img{
+     background-image: url("'{{ site.url}}'"); 
+    } 
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+ #main-img{
+     background-image: url("'{{ site.url}}'");
+    } 
+}
+
+
+
+
+
 
 /* font weights 300 (light), 400 (normal), 500 (medium), 700 (bold)*/
 
@@ -1256,3 +1286,5 @@ img {
 
 .padding {padding-bottom: 50px}
 
+.contact-layout {margin: 0 1em;}
+.pagination {margin-top: 100px;margin-bottom: 100px}

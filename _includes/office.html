@@ -1,10 +1,17 @@
 
 {% if site.data.information %} {% assign info = site.data.information %}
 
-<section class="flexcontainer">
+  <div class="contact-layout">
+<section class="container pure-g padding">
+  <div class="pure-u-1 ">
   <img src="{{ info.office-img }}" />
+    <img src="{{ info.office-img-2 }}" />
+      <img src="{{ info.office-img-3 }}" />
+         <img src="{{ info.office-img-4 }}" />
+         <img src="{{ info.office-img-5 }}" />
   <div class="contact-div ">
     <p>{{info.office-info}}</p>
   </div>
 </section>
+</div>
 {% endif %}
