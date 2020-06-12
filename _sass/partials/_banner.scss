@@ -11,13 +11,26 @@
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 
 }
+
+#banner h1{color: #fff;}
 /*ul {
   display: block;
   list-style-type: disc;
   margin: 0;
 }*/
+.park-heroConcessoes {
+    height: 463px;
+}
+#park {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-
+  padding-top: 10px;
+  padding-bottom: 30px;
+  position: relative;
+  min-height: 355px;
+}
 ul.service-list  li {margin-bottom:20px;margin-top:20px;font-size: 21px; font-weight: bold; color:#0046be}
 
 

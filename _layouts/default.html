@@ -5,12 +5,16 @@
   <body>
       {% include header.html %}
       {% include banner.html %}
-
-      {% include services.html %}
-      {% include contact.html %}
-      {% if page.url == "/" %}
+ {% if page.url == "/" %}
       {% include posts.html %}
       {% endif %}
+         
+      {% include contact.html %}
+       {% if page.url == "/office" %} 
+   {% include park.html %}
+    {% endif %}
+
+     
       {% if page.url == "/expertise" %} 
       {% include expertise.html %}
       {% endif %}
