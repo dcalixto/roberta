@@ -1,7 +1,7 @@
 ---
 title: Áreas práticas
 layout: home
-banner_image: "/photos/rect36402.jpg"
+banner_image: "/photos/justice2.jpg"
 
 services:
   - heading: Cível
