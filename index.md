@@ -1,12 +1,12 @@
 ---
-title: Áreas práticas
+title: Sabino Rocha Advogados Associados
 layout: home
 banner_image: "/photos/justice2.jpg"
 
 services:
   - heading: Cível
     description: Acidente de transito DETRAN/DPVAT, Despejo - Reitegracao de posse - Usocapiao
-  
+
     icon: "/photos/civil2.jpg"
     img: "/photos/business.jpg"
 
@@ -16,12 +16,12 @@ services:
     img: "/photos/business.jpg"
 
   - heading: Família & Orfaos
-    description:  Divórcio - Regularizacao de visita, Pensao alimenticia - Alvara - Inventario
+    description: Divórcio - Regularizacao de visita, Pensao alimenticia - Alvara - Inventario
     icon: "/photos/familia.jpg"
     img: "/photos/business.jpg"
   - heading: Trabalhista
 
-    description: Acordos Extrajudiciais - Acoes judiciais, FGTS - Calculo de verbas rescisorias 
+    description: Acordos Extrajudiciais - Acoes judiciais, FGTS - Calculo de verbas rescisorias
 
     icon: "/photos/trabalhista2.jpg"
     img: "/photos/business.jpg"
