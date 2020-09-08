@@ -1,8 +1,5 @@
 ---
 heading: Penal
-description: Habeas Corpus - Defessa processual, JECRIM - Visitacao delegacia/presidio
+description: Habeas Corpus - Defesa processual, JECRIM - Visitação delegacia/presídio
 icon: "/photos/penal2.jpg"
-
 ---
-
-

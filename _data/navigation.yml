@@ -3,17 +3,17 @@
 - text: Áreas de atuação
   url: /expertise
 
-- text: Publicações
-  url: /posts
+# - text: Publicações
+#  url: /posts
 
 - text: Escritório
   url: /office
 
-- text: Nossa Equipe
-  url: /team
+#- text: Nossa Equipe
+#  url: /team
 
-- text: Links Úteis
-  url: /links
+#- text: Links Úteis
+# url: /links
 
 - text: Contato
   url: /contact

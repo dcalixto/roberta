@@ -1,8 +1,5 @@
 ---
 heading: Cível
-description: Acidente de transito DETRAN/DPVAT, Despejo - Reitegracao de posse - Usocapiao
+description: Acidente de trânsito DETRAN/DPVAT, Despejo - Reintegração de posse - Usucapião
 icon: "/photos/civil2.jpg"
-
 ---
-
-

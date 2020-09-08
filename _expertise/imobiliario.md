@@ -1,8 +1,5 @@
 ---
 heading: Imobiliário
-description: imobiliário
+description: Imobiliário
 icon: "/photos/real-estate.jpg"
-
 ---
-
-

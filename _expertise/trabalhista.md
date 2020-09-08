@@ -1,8 +1,5 @@
 ---
 heading: Trabalhista
-description: Acordos Extrajudiciais - Acoes judiciais, FGTS - Calculo de verbas rescisorias - Assédio moral
+description: Acordos Extrajudiciais - Ações judiciais, FGTS - Cálculo de verbas rescisórias - Assédio moral
 icon: "/photos/trabalhista2.jpg"
-
 ---
-
-

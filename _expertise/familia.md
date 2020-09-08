@@ -1,11 +1,5 @@
 ---
-heading: Familia
-description: Divórcio - Regularizacao de visita, Pensao alimenticia - Alvara - Inventario
+heading: Família
+description: Divórcio - Regularização de visita, Pensão alimentícia - Alvará - Inventário
 icon: "/photos/familia.jpg"
-             
-             
-             
-         
 ---
-
-

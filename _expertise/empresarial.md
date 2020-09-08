@@ -1,9 +1,6 @@
 ---
 heading: Empresarial
-description: Diagnostico, consultoria e assessoria preventiva e contenciosa nas areas - trabalhista, tributaria, <br />clientes, fornecedores, administrativo e legislacao
+description: Diagnóstico, Consultoria e assessoria preventiva e contenciosa nas áreas - </br>Trabalhista, Tributária, Clientes, Fornecedores, Administrativo e legislação
+
 icon: "/photos/business.jpg"
-
-
 ---
-
-
