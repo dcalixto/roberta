@@ -2,9 +2,9 @@
 url: "https://objective-swanson-e8357b.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Advogado RJ - Sabino Rocha Advogados Associados" # the name of your site, e.g. ACME Corp.
-description: "Sabino Rocha Advogados Associados é um escritório localizado no Rio de Janeiro, 
-com forte atuação nas áreas cível, família, criminal e imobiliário."
-tagline: "Advogado, Advogado RJ, Advogados"
+description: "Escritório de advocacia localizado no Rio de Janeiro, 
+com forte atuação nas áreas cível, direitos autorais, consumidor, empresarial, trabalhista, previdenciário, penal, família, criminal e imobiliário."
+tagline: "Advogado, Advogado RJ, Advogados, Advogado Rio de Janeiro, Advogada RJ, Advogada Rio de Janeiro"
 lang: "pt-BR"
 # Build settings
 markdown: kramdown
