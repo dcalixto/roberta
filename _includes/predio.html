@@ -1,0 +1,8 @@
+{% if site.data.information %} {% assign info = site.data.information %}
+<header
+  id="park"
+  class="park-heroConcessoes"
+  style="background-image: url('{{ info.park_image | absolute_url }}');"
+></header>
+
+{% endif %}
