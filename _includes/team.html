@@ -1,13 +1,28 @@
+{% if site.data.information %} {% assign info = site.data.information %}
+<div class="contact-layout">
+  <section class="container pure-g padding office">
+    <div class="pure-u-1 pure-u-md-1-2">
+      <img src="{{ info.team-img-1 }}" />
+    </div>
 
+    <div class="pure-u-1 pure-u-md-1-2">
+      <img src="{{ info.team-img-2 }}" />
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+      <img src="{{ info.team-img-3 }}" />
+    </div>
+  </section>
 
+  <section class="container pure-g padding office">
+    <div class="pure-u-1 pure-u-md-1-2">
+      <h2>Equipe</h2>
+      <p><b>Roberta Sabino</b></p>
 
-  <div class="contact-layout">
-<section class="container pure-g padding">
-  <div class="pure-u-1 ">
- 
-  <div class="contact-div ">
-    <h1>Sua causa nossa prioridade</h1>
-  </div>
-</section>
+      <p><b>Gisele Marques</b></p>
+
+      <p><b>Shirlene Jezini</b></p>
+      <p><b>Salvador Silva</b></p>
+    </div>
+  </section>
 </div>
-
+{% endif %}

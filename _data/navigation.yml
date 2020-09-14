@@ -9,8 +9,8 @@
 - text: Escritório
   url: /office
 
-#- text: Nossa Equipe
-#  url: /team
+- text: Equipe
+  url: /team
 
 #- text: Links Úteis
 # url: /links
