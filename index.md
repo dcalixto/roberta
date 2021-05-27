@@ -1,7 +1,7 @@
 ---
-title: Sabino Rocha Advogados Associados
-layout: home
-banner_image: "/photos/justice2.jpg"
+#title: Sabino Rocha Advogados Associados
+#layout: home
+#banner_image: "/photos/justice2.jpg"
 
 services:
   - heading: Cível
